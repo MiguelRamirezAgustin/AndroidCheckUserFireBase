@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearHeader"
+        android:layout_width="match_parent"
+        android:background="@drawable/login"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="180dp">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWelcomeEmployes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=" Login"
+        android:textColor="@color/black"
+        android:layout_below="@+id/linearHeader"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30sp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/tvWelcomeEmployes"
+        android:background="@color/white"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailEmployes"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="@color/color_orange"
+                android:hint="Correo"
+                app:boxStrokeColor="@color/color_gray"
+                android:layout_marginTop="30dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputEmailEmployes"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:text="miguel.r.agustin@gmail.com"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="50dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordEmployes"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/etEmailEmployes"
+                android:textColorHint="@color/color_orange"
+                android:hint="Contraseña"
+                app:boxStrokeColor="@color/color_gray"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPasswordEmployes"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:text="12345"
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="50dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginEmployes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/cardLogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/iconbtnnot">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:id="@+id/linearButton"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/btnLoginEmployes"
+        android:orientation="vertical"
+        android:background="@color/color_gray"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="50dp"/>
+
+
+
+</RelativeLayout>
